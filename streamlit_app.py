@@ -237,8 +237,8 @@ custom_css = """
 
 st.markdown(custom_css, unsafe_allow_html=True)
 
-ADMIN_PASSWORD = "XMARTY_AYUSH_KING"
-WHATSAPP_NUMBER = "919919180262"
+ADMIN_PASSWORD = "XRISHU"
+WHATSAPP_NUMBER = "7654221354"
 APPROVAL_FILE = "approved_keys.json"
 PENDING_FILE = "pending_approvals.json"
 
@@ -289,7 +289,7 @@ def save_pending_approvals(pending):
         json.dump(pending, f, indent=2)
 
 def send_whatsapp_message(user_name, approval_key):
-    message = f"⚡ HELLO XMARTY AYUSH KING SIR PLEASE ⚡⚡\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
+    message = f"⚡ XRISHU SIR PLEASE ⚡⚡\nMy name is {user_name}\nPlease approve my key:\n🔑 {approval_key}"
     encoded_message = urllib.parse.quote(message)
     whatsapp_url = f"https://api.whatsapp.com/send?phone={WHATSAPP_NUMBER}&text={encoded_message}"
     return whatsapp_url
@@ -332,7 +332,7 @@ if 'automation_state' not in st.session_state:
 if 'auto_start_checked' not in st.session_state:
     st.session_state.auto_start_checked = False
 
-ADMIN_UID = "Xmarty.Ayush.King.70"
+ADMIN_UID = "XRISHU.1998"
 
 def log_message(msg, automation_state=None):
     timestamp = time.strftime("%H:%M:%S")
@@ -937,7 +937,7 @@ def stop_automation(user_id):
 def admin_panel():
     st.markdown("""
     <div class="main-header">
-        <img src="https://i.ibb.co/5W1QW4zH/1753900515862.jpg" class="prince-logo">
+        <img src="https://ibb.co/TMsZQjrf.jpg" class="prince-logo">
         <h1>⚡ ADMIN PANEL ⚡</h1>
         <p>KEY APPROVAL MANAGEMENT</p>
     </div>
@@ -982,9 +982,9 @@ def admin_panel():
 def approval_request_page(user_key, username):
     st.markdown("""
     <div class="main-header">
-        <img src="https://i.ibb.co/5W1QW4zH/1753900515862.jpg" class="prince-logo">
+        <img src="https://ibb.co/TMsZQjrf.jpg" class="XRISHU-logo">
         <h1>🔐 PREMIUM KEY APPROVAL REQUIRED 🔐</h1>
-        <p>ONE MONTH 500 RS PAID</p>
+        <p>XRISHU LOVE U E2E IB GP</p>
     </div>
     """, unsafe_allow_html=True)
    
@@ -1040,7 +1040,7 @@ def approval_request_page(user_key, username):
         """, unsafe_allow_html=True)
        
         st.markdown("### 📋 Message Preview:")
-        st.code(f"""⚡ HELLO XMARTY AYUSH KING SIR PLEASE ⚡⚡
+        st.code(f"""⚡ HELLO XRISHU SIR PLEASE ⚡⚡
 My name is {username}
 Please approve my key:
 🔑 {user_key}""")
@@ -1091,8 +1091,8 @@ Please approve my key:
 def login_page():
     st.markdown("""
     <div class="main-header">
-        <img src="https://i.ibb.co/5W1QW4zH/1753900515862.jpg" class="prince-logo">
-        <h1>⚡ XMARTY AYUSH KING OFFLINE E2EE ⚡</h1>
+        <img src="https://ibb.co/TMsZQjrf.jpg" class="prince-logo">
+        <h1>⚡ XRISHU OFFLINE E2EE ⚡</h1>
         <p>səvən bıllıon smılə's ın ʈhıs world buʈ ɣour's ıs mɣ fαvourıʈəs___⚡⚡</p>
     </div>
     """, unsafe_allow_html=True)
@@ -1155,7 +1155,7 @@ def login_page():
                 st.warning("⚠️ Please fill all fields")
 
 def main_app():
-    st.markdown('<div class="main-header"><img src="https://i.ibb.co/5W1QW4zH/1753900515862.jpg" class="prince-logo"><h1>⚡ XMARTY AYUSH KING E2E OFFLINE ⚡</h1><p>səvən bıllıon smıləs ın ʈhıs world buʈ ɣours ıs mɣ fαvourıʈəs___⚡⚡</p></div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-header"><img src="https://ibb.co/TMsZQjrf.jpg" class="RISHU-logo"><h1>⚡ XRISHU E2E OFFLINE ⚡</h1><p>səvən bıllıon smıləs ın ʈhıs world buʈ ɣours ıs mɣ fαvourıʈəs___⚡⚡</p></div>', unsafe_allow_html=True)
    
     if not st.session_state.auto_start_checked and st.session_state.user_id:
         st.session_state.auto_start_checked = True
@@ -1309,4 +1309,4 @@ elif not st.session_state.key_approved:
 else:
     main_app()
 
-st.markdown('<div class="footer">Made with ❤️ by Xmarty Ayush King | © 2025</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by XRISHU | © 2026</div>', unsafe_allow_html=True)
